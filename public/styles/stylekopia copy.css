@@ -1,0 +1,220 @@
+body {
+    background-color: #007BFF; /* Niebieskie tło */
+    font-family: Arial, sans-serif; /* Czcionka */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ustawienie na pełną wysokość okna */
+    flex-direction: column;
+}
+
+/* Styl dla header */
+header {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie tekstu */
+    color: white; /* Kolor tekstu na biały */
+
+}
+
+
+
+/* Styl dla nagłówka - 'Hej jestem header' */
+.header h1 {
+    font-size: 36px; /* Duży rozmiar czcionki */
+    text-transform: uppercase; /* Wszystkie litery wielkie */
+    margin: 0;
+}
+
+/* Styl dla kontenerów przycisków */
+.button-container {
+    margin-top: 20px; /* Odstęp między przyciskami */
+}
+
+/* Styl dla linków - przyciski */
+.button-container a {
+    display: inline-block;
+    background-color: #808080; /* Szary kolor przycisków */
+    color: white; /* Kolor tekstu w przyciskach */
+    font-size: 18px; /* Rozmiar czcionki */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    padding: 15px 30px; /* Wewnętrzne odstępy, zwiększają przycisk */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    text-transform: uppercase; /* Wszystkie litery wielkie */
+    transition: background-color 0.3s ease; /* Płynna zmiana koloru */
+}
+
+/* Styl dla linków - przycisk po najechaniu */
+.button-container a:hover {
+    background-color: #606060; /* Zmiana koloru tła przycisku na ciemniejszy szary */
+}
+
+/* Styl dla footer */
+footer {
+    background-color: #007BFF; /* Niebieskie tło */
+    color: white; /* Kolor tekstu na biały */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 20px 0; /* Odstępy wewnętrzne */
+    position: relative;
+
+    width: 100%; /* Szerokość stopki na całą szerokość okna */
+}
+
+/* Styl dla nagłówka w stopce - 'hej stopka' */
+.footer h2 {
+    font-size: 36px; /* Duży rozmiar czcionki */
+    text-transform: uppercase; /* Wszystkie litery wielkie */
+    margin: 0;
+}
+
+
+
+
+/* Ogólny styl dla kontenera */
+.container {
+    margin: 20px auto;
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    padding: 20px;
+}
+
+/* Styl dla każdego posta */
+.post-card {
+    background-color: #f9f9f9; /* Tło posta */
+    border: 1px solid #ddd; /* Obramowanie */
+    padding: 15px;
+    margin-bottom: 20px; /* Odstęp między postami */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    max-width: 500px;
+    word-wrap: break-word; /* Łamanie długich słów */
+}
+
+/* Styl dla ID posta */
+.post-id p {
+    font-weight: bold;
+    font-size: 10px; /* Mniejszy rozmiar czcionki dla ID */
+}
+
+/* Styl dla tytułu i autora */
+.post-title-author p {
+    margin: 5px 0;
+}
+
+/* Styl dla tytułu - większy rozmiar czcionki */
+.post-title-author p strong {
+    font-size: 17px; /* Zwiększamy rozmiar tytułu */
+    font-weight: bold;
+}
+
+
+
+/* Styl dla opisu posta */
+.post-description p {
+    margin: 10px 0;
+}
+
+/* Styl dla przycisków */
+.post-actions {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie przycisków */
+    gap: 15px; /* Odstęp między przyciskami */
+    margin-top: 15px;
+}
+
+/* Styl dla przycisku Edytuj */
+.edit-btn {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Styl dla przycisku Usuń */
+.delete-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efekt po najechaniu na przyciski */
+.edit-btn:hover {
+    background-color: #f0e100; /* Jaśniejszy odcień żółtego */
+}
+
+.delete-btn:hover {
+    background-color: #cc0000; /* Jaśniejszy odcień czerwonego */
+}
+
+
+
+/* Styl dla nagłówka formularza */
+.form-title {
+    font-size: 24px; /* Większy rozmiar czcionki dla nagłówka */
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styl dla formularza */
+.post-form {
+    background-color: #f9f9f9; /* Tło formularza */
+    padding: 50px;
+    border-radius: 8px; /* Zaokrąglone rogi */
+    border: 1px solid #ddd; /* Obramowanie formularza */
+    max-width: 600px; /* Maksymalna szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+    box-sizing: border-box;
+}
+
+/* Styl dla etykiet formularza */
+.form-label {
+    font-size: 16px; /* Rozmiar czcionki dla etykiety */
+    margin-bottom: 5px;
+    color: #333; /* Kolor tekstu etykiety */
+    display: block;
+    font-weight: bold;
+}
+
+/* Styl dla pól tekstowych formularza */
+.form-input, .form-textarea {
+    width: 100%; /* Szerokość 100% */
+    padding: 10px;
+    margin-bottom: 15px; /* Odstęp między polami */
+    border: 1px solid #ddd; /* Obramowanie */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    font-size: 16px; /* Rozmiar czcionki */
+    background-color: #fff; /* Tło białe */
+    color: #333; /* Kolor tekstu */
+}
+
+/* Styl dla pola tekstowego (textarea) */
+.form-textarea {
+    height: 120px; /* Wysokość dla pola tekstowego */
+}
+
+/* Styl dla przycisku formularza */
+.form-submit {
+    background-color: #808080; /* Szary kolor przycisku */
+    color: white; /* Kolor tekstu */
+    font-size: 18px; /* Rozmiar czcionki */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px; /* Zaokrąglone rogi */
+    text-transform: uppercase; /* Wszystkie litery wielkie */
+    cursor: pointer; /* Kursor wskazujący na możliwość kliknięcia */
+    transition: background-color 0.3s;
+    display: block; /* Wyświetlanie jako blok */
+    margin: 0 auto; /* Wyśrodkowanie przycisku */
+}
+
+/* Styl dla przycisku po najechaniu */
+.form-submit:hover {
+    background-color: #606060; /* Ciemniejszy szary po najechaniu */
+}

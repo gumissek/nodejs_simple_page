@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs')%>
+
+<div class="container">
+    <% if (locals.requested_post) { %>
+        <div class="form-header">
+            <h3 class="form-title">Edit post - id : <%= requested_post.title %></h3>
+        </div>
+        <form action="/editPost?post_id=<%= requested_post.id %>" method="post" class="post-form">
+            <label for="title" class="form-label">Change title:</label><br>
+            <input type="text" name="title" class="form-input" value="<%= requested_post.title %>"><br>
+
+            <label for="description" class="form-label">Change description:</label><br>
+            <textarea name="description" class="form-textarea"><%= requested_post.description %></textarea><br>
+
+            <label for="author" class="form-label">Change author:</label><br>
+            <input type="text" name="author" class="form-input" value="<%= requested_post.author %>"><br>
+
+            <input type="submit" value="Edit post" class="form-submit">
+        </form>
+    <% } %>
+</div>
+
+
+<%- include('partials/footer.ejs')%>

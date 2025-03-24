@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs')  %>
+<h3 class="form-title">Add new post</h3>
+<form action="/addPost" method="post" class="post-form">  
+    <label for="title" class="form-label">Add title :</label><br>
+    <input type="text" name="title" class="form-input" placeholder="Podaj tytul" required><br>
+
+    <label for="description" class="form-label">Add post`s text :</label><br>
+    <textarea name="description" class="form-textarea" placeholder="Tresc posta" required></textarea><br>
+
+    <label for="author" class="form-label">Add author :</label><br>
+    <input type="text" name="author" class="form-input" placeholder="Podaj autora" required><br>
+
+    <input type="submit" value="Dodaj post" class="form-submit">
+</form>
+
+
+<%- include('partials/footer.ejs')  %>

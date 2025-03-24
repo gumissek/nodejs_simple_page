@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs')%>
+
+<div class="container">
+
+    <% if (locals.posts) { %>
+        
+        <% posts.forEach(post => { %>
+            <div class="post-card">
+                <div class="post-id">
+                    <p><strong>ID:</strong> <%= post.id %></p>
+                </div>
+                <div class="post-title-author">
+                    <p><strong>Title:</strong> <%= post.title %></p>
+                    <p><strong>Author:</strong> <%= post.author %></p>
+                </div>
+                <hr>
+                <div class="post-description">
+                    <p><strong>Text:</strong> <%= post.description %></p>
+                </div>
+                <div class="post-actions">
+                    <a href="/editPost?post_id=<%= post.id %>" class="edit-btn">Edit Post</a>
+                    <a href="/deletePost?post_id=<%= post.id %>" class="delete-btn">Delete Post</a>
+                </div>
+            </div>
+            
+        <% }); %>
+
+    <% } else { %>
+        <p>brak postów</p>
+    <% } %>
+
+</div>    
+        
+</div>
+
+<%- include('partials/footer.ejs')%>
+
+
